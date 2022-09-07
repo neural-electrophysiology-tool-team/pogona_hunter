@@ -1,0 +1,114 @@
+{
+  "bugTypes": {
+    "cockroach": {
+      "text": "Cockroach",
+      "numImagesPerBug": 3,
+      "speed": 3,
+      "radiusRange": {
+        "min": 140,
+        "max": 160
+      },
+      "stepsPerImage": 10
+    },
+    "leaf": {
+      "text": "Leaf",
+      "numImagesPerBug": 8,
+      "speed": 0,
+      "radiusRange": {
+        "min": 140,
+        "max": 160
+      },
+      "stepsPerImage": 10
+    },
+    "worm": {
+      "text": "Worm",
+      "numImagesPerBug": 5,
+      "speed": 1,
+      "radiusRange": {
+        "min": 220,
+        "max": 230
+      },
+      "stepsPerImage": 10
+    },
+    "red_beetle": {
+      "text": "Red Beetle",
+      "numImagesPerBug": 12,
+      "speed": 3,
+      "radiusRange": {
+        "min": 150,
+        "max": 180
+      },
+      "stepsPerImage": 4
+    },
+    "black_beetle": {
+      "text": "Black Beetle",
+      "numImagesPerBug": 12,
+      "speed": 3,
+      "radiusRange": {
+        "min": 150,
+        "max": 170
+      },
+      "stepsPerImage": 4
+    },
+    "green_beetle": {
+      "text": "Green Beetle",
+      "numImagesPerBug": 12,
+      "speed": 3,
+      "radiusRange": {
+        "min": 150,
+        "max": 160
+      },
+      "stepsPerImage": 3
+    },
+    "ant": {
+      "text": "Ant",
+      "numImagesPerBug": 7,
+      "speed": 3,
+      "radiusRange": {
+        "min": 120,
+        "max": 130
+      },
+      "stepsPerImage": 5
+    },
+    "centipede": {
+      "text": "Centipede",
+      "numImagesPerBug": 4,
+      "speed": 3,
+      "radiusRange": {
+        "min": 150,
+        "max": 170
+      },
+      "stepsPerImage": 7
+    },
+    "spider": {
+      "text": "Spider",
+      "numImagesPerBug": 5,
+      "speed": 3,
+      "radiusRange": {
+        "min": 140,
+        "max": 150
+      },
+      "stepsPerImage": 9
+    }
+  },
+  "holePositions": {
+    "bottomLeft": "Bottom Left",
+    "bottomRight": "Bottom Right"
+  },
+  "movementTypes": {
+    "static": "static",
+    "holes": "holes",
+    "random": "random walk",
+    "circle": "circle",
+    "low_horizontal": "low horizontal",
+    "low_horizontal_noise": "low horizontal + noise"
+  },
+  "targetDrifts": {
+    "leftBottom": {
+      "xTarget": -300
+    },
+    "rightBottom": {
+      "xTarget": "width+300"
+    }
+  }
+}
