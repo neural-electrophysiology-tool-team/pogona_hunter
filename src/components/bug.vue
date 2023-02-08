@@ -1,8 +1,5 @@
 <template>
-  <div>
-    <img ref="bugImg" :src="imgSrc" alt=""/>
-    <img ref="holeImg" :src="holeSrc" alt=""/>
-  </div>
+  <img ref="bugImg" :src="imgSrc" alt=""/>
 </template>
 
 <script>
@@ -18,7 +15,6 @@ export default {
       currentBugType: undefined,
       currentBugSize: undefined,
       imgSrc: '',
-      holeSrc: '',
       mass: 1,
       randomNoise: 0,
       frameCounter: 0
@@ -161,17 +157,8 @@ export default {
       this.randomNoiseCount++
       return this.randomNoise
     },
-    drawHoles() {
-      let holeW = 200
-      let holeH = 200
-      this.holeSrc = this.getImageSrc(`/hole.png`)
-      this.ctx.drawImage(this.$refs.holeImg, 100, this.canvas.height - holeH - 100, holeW, holeH)
-      this.ctx.drawImage(this.$refs.holeImg,
-          this.canvas.width - holeW - 100, this.canvas.height - holeH - 100, holeW, holeH)
-    },
     draw() {
       this.ctx.beginPath()
-      this.drawHoles()
       let imgIndex = Math.floor(this.step / this.stepsPerImage)
       this.imgSrc = this.getImageSrc(`/${this.currentBugType}${imgIndex}.png`)
       this.drawImage()

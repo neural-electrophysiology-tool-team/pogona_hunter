@@ -91,10 +91,6 @@
       "stepsPerImage": 9
     }
   },
-  "holePositions": {
-    "bottomLeft": "Bottom Left",
-    "bottomRight": "Bottom Right"
-  },
   "movementTypes": {
     "static": "static",
     "holes": "holes",
